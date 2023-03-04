@@ -1,0 +1,12 @@
+C:\Users\Kharc\Downloads\Vouchers-main\Vouchers-main\Vouchers.Auth\bin\Debug\net7.0\Vouchers.Auth.deps.json
+C:\Users\Kharc\Downloads\Vouchers-main\Vouchers-main\Vouchers.Auth\bin\Debug\net7.0\Vouchers.Auth.dll
+C:\Users\Kharc\Downloads\Vouchers-main\Vouchers-main\Vouchers.Auth\bin\Debug\net7.0\Vouchers.Auth.pdb
+C:\Users\Kharc\Downloads\Vouchers-main\Vouchers-main\Vouchers.Auth\obj\Debug\net7.0\Vouchers.Auth.csproj.AssemblyReference.cache
+C:\Users\Kharc\Downloads\Vouchers-main\Vouchers-main\Vouchers.Auth\obj\Debug\net7.0\Vouchers.Auth.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kharc\Downloads\Vouchers-main\Vouchers-main\Vouchers.Auth\obj\Debug\net7.0\Vouchers.Auth.AssemblyInfoInputs.cache
+C:\Users\Kharc\Downloads\Vouchers-main\Vouchers-main\Vouchers.Auth\obj\Debug\net7.0\Vouchers.Auth.AssemblyInfo.cs
+C:\Users\Kharc\Downloads\Vouchers-main\Vouchers-main\Vouchers.Auth\obj\Debug\net7.0\Vouchers.Auth.csproj.CoreCompileInputs.cache
+C:\Users\Kharc\Downloads\Vouchers-main\Vouchers-main\Vouchers.Auth\obj\Debug\net7.0\Vouchers.Auth.dll
+C:\Users\Kharc\Downloads\Vouchers-main\Vouchers-main\Vouchers.Auth\obj\Debug\net7.0\refint\Vouchers.Auth.dll
+C:\Users\Kharc\Downloads\Vouchers-main\Vouchers-main\Vouchers.Auth\obj\Debug\net7.0\Vouchers.Auth.pdb
+C:\Users\Kharc\Downloads\Vouchers-main\Vouchers-main\Vouchers.Auth\obj\Debug\net7.0\ref\Vouchers.Auth.dll

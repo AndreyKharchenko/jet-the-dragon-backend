@@ -1,0 +1,17 @@
+D:\Projects\CSharp\ES.Backend\ES.Persistence\obj\Debug\net6.0\ES.Persistence.csproj.AssemblyReference.cache
+D:\Projects\CSharp\ES.Backend\ES.Persistence\obj\Debug\net6.0\ES.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\CSharp\ES.Backend\ES.Persistence\obj\Debug\net6.0\ES.Persistence.AssemblyInfoInputs.cache
+D:\Projects\CSharp\ES.Backend\ES.Persistence\obj\Debug\net6.0\ES.Persistence.AssemblyInfo.cs
+D:\Projects\CSharp\ES.Backend\ES.Persistence\obj\Debug\net6.0\ES.Persistence.csproj.CoreCompileInputs.cache
+D:\Projects\CSharp\ES.Backend\ES.Persistence\bin\Debug\net6.0\ES.Persistence.deps.json
+D:\Projects\CSharp\ES.Backend\ES.Persistence\bin\Debug\net6.0\ES.Persistence.dll
+D:\Projects\CSharp\ES.Backend\ES.Persistence\bin\Debug\net6.0\ES.Persistence.pdb
+D:\Projects\CSharp\ES.Backend\ES.Persistence\bin\Debug\net6.0\ES.Application.dll
+D:\Projects\CSharp\ES.Backend\ES.Persistence\bin\Debug\net6.0\ES.Domain.dll
+D:\Projects\CSharp\ES.Backend\ES.Persistence\bin\Debug\net6.0\ES.Application.pdb
+D:\Projects\CSharp\ES.Backend\ES.Persistence\bin\Debug\net6.0\ES.Domain.pdb
+D:\Projects\CSharp\ES.Backend\ES.Persistence\obj\Debug\net6.0\ES.Persistence.csproj.CopyComplete
+D:\Projects\CSharp\ES.Backend\ES.Persistence\obj\Debug\net6.0\ES.Persistence.dll
+D:\Projects\CSharp\ES.Backend\ES.Persistence\obj\Debug\net6.0\refint\ES.Persistence.dll
+D:\Projects\CSharp\ES.Backend\ES.Persistence\obj\Debug\net6.0\ES.Persistence.pdb
+D:\Projects\CSharp\ES.Backend\ES.Persistence\obj\Debug\net6.0\ref\ES.Persistence.dll

@@ -1,0 +1,12 @@
+D:\Projects\CSharp\ES.Backend\ES.Domain\obj\Debug\net6.0\ES.Domain.csproj.AssemblyReference.cache
+D:\Projects\CSharp\ES.Backend\ES.Domain\obj\Debug\net6.0\ES.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\CSharp\ES.Backend\ES.Domain\obj\Debug\net6.0\ES.Domain.AssemblyInfoInputs.cache
+D:\Projects\CSharp\ES.Backend\ES.Domain\obj\Debug\net6.0\ES.Domain.AssemblyInfo.cs
+D:\Projects\CSharp\ES.Backend\ES.Domain\obj\Debug\net6.0\ES.Domain.csproj.CoreCompileInputs.cache
+D:\Projects\CSharp\ES.Backend\ES.Domain\bin\Debug\net6.0\ES.Domain.deps.json
+D:\Projects\CSharp\ES.Backend\ES.Domain\bin\Debug\net6.0\ES.Domain.dll
+D:\Projects\CSharp\ES.Backend\ES.Domain\bin\Debug\net6.0\ES.Domain.pdb
+D:\Projects\CSharp\ES.Backend\ES.Domain\obj\Debug\net6.0\ES.Domain.dll
+D:\Projects\CSharp\ES.Backend\ES.Domain\obj\Debug\net6.0\refint\ES.Domain.dll
+D:\Projects\CSharp\ES.Backend\ES.Domain\obj\Debug\net6.0\ES.Domain.pdb
+D:\Projects\CSharp\ES.Backend\ES.Domain\obj\Debug\net6.0\ref\ES.Domain.dll
