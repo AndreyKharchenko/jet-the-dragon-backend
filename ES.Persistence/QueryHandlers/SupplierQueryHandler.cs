@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace ES.Persistence.QueryHandlers
 {
-    public class SupplierQueryHandler : IHandler<SuppliersQuery, SupplierDto>
+    public class SupplierQueryHandler : IHandler<SupplierQuery, SupplierDto>
     {
         private readonly EsDbContext _dbContext;
         private readonly ILoginNameProvider _loginNameProvider;
@@ -23,7 +23,7 @@ namespace ES.Persistence.QueryHandlers
             _loginNameProvider = loginNameProvider;
         }
 
-        public async Task<SupplierDto> HandleAsync(SuppliersQuery query, CancellationToken cancellation)
+        public async Task<SupplierDto> HandleAsync(SupplierQuery query, CancellationToken cancellation)
         {
             var email = _loginNameProvider.CurrentLoginName;
             if (email == null)
@@ -36,11 +36,25 @@ namespace ES.Persistence.QueryHandlers
                 .Select(a => new SupplierDto()
                 {
                     Id = a.Id,
+                    CustomerId = a.Customer.Id,
                     FirstName = a.Customer.FirstName,
                     LastName = a.Customer.LastName,
                     Phone = a.Customer.Phone,
                     Email = a.Customer.Email,
                     Country = a.Customer.Address.Country,
+                    Region = a.Customer.Address.Region,
+                    City = a.Customer.Address.City,
+                    Street = a.Customer.Address.Street,
+                    HouseNumber = a.Customer.Address.HouseNumber,
+                    OrgType = a.OrgType,
+                    INN = a.INN,
+                    Name = a.Name,
+                    OGRNIP = a.OGRNIP,
+                    DeclarationNum = a.DeclarationNum,
+                    DeclarationDate = a.DeclarationDate,
+                    SanBookNum = a.SanBookNum,
+                    SanBookDate = a.SanBookDate,
+                    Description = a.Description,
                 })
                 .FirstOrDefaultAsync();
         }

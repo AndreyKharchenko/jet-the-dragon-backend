@@ -20,7 +20,7 @@ namespace ES.Domain
 
         public string HouseNumber { get; set; }
 
-        public string FlatNumber { get; set; }
+        public string? FlatNumber { get; set; }
 
     }
 }

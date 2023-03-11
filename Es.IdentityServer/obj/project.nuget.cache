@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/+0FedRxIi3WGIv7OWxc0j/DH3wQMiuj1GNgrllRiYnk19QEjWGve0ZjTJmj98li5VkK24UfUGB7UCx+Mwc7OQ==",
+  "dgSpecHash": "5Hhi4fDf38gesRCm7/UOwpUDanWeJ0fsjC1HAR4ND2SZ3jsMq/4at57Oc4p5xd1aYhJ56vg6GKuHFb1UJBCc6Q==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\CSharp\\ES.Backend\\Es.IdentityServer\\Es.IdentityServer.csproj",
+  "projectFilePath": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\Es.IdentityServer\\Es.IdentityServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kharc\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Kharc\\.nuget\\packages\\identitymodel\\4.4.0\\identitymodel.4.4.0.nupkg.sha512",

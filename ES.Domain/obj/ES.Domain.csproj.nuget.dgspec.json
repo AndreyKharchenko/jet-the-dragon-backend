@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\CSharp\\ES.Backend\\ES.Domain\\ES.Domain.csproj": {}
+    "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.Domain\\ES.Domain.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\CSharp\\ES.Backend\\ES.Domain\\ES.Domain.csproj": {
+    "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.Domain\\ES.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\CSharp\\ES.Backend\\ES.Domain\\ES.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.Domain\\ES.Domain.csproj",
         "projectName": "ES.Domain",
-        "projectPath": "D:\\Projects\\CSharp\\ES.Backend\\ES.Domain\\ES.Domain.csproj",
+        "projectPath": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.Domain\\ES.Domain.csproj",
         "packagesPath": "C:\\Users\\Kharc\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\CSharp\\ES.Backend\\ES.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kharc\\AppData\\Roaming\\NuGet\\NuGet.Config",

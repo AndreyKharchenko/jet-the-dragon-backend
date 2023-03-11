@@ -10,6 +10,8 @@ namespace ES.Application.Dtos
     public sealed class SupplierDto
     {
         public Guid Id { get; set; }
+
+        public Guid CustomerId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
 

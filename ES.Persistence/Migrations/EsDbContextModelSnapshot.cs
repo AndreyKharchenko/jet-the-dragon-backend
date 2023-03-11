@@ -340,7 +340,6 @@ namespace ES.Persistence.Migrations
                                 .HasColumnType("text");
 
                             b1.Property<string>("FlatNumber")
-                                .IsRequired()
                                 .HasColumnType("text");
 
                             b1.Property<string>("HouseNumber")

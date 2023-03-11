@@ -20,5 +20,7 @@ namespace ES.Application.Commands.CustomerCommands
         public string HouseNumber { get; set; }
         public string FlatNumber { get; set; }
 
+        public string? Region { get; set; }
+
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BJHAAb8Zhg6zLqo25lGi2Dt/eZmN+lZldrdRjdqbqPGUuL46B/ovIsEktckCIIHdFdQ6vA4xd9KA/00Z+KE7dQ==",
+  "dgSpecHash": "dGQNGvpZC5Njzvw1zE0b9l7RL1Fyxu8uBFVIoC6SmSIYL1XJcDr1gzJUsg0BrvCSSWsbXGBEibY1dB2z4SygeA==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\CSharp\\ES.Backend\\Es.Auth\\Es.Auth.csproj",
+  "projectFilePath": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\Es.Auth\\Es.Auth.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kharc\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.12\\microsoft.aspnetcore.cryptography.internal.5.0.12.nupkg.sha512",
     "C:\\Users\\Kharc\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.12\\microsoft.aspnetcore.cryptography.keyderivation.5.0.12.nupkg.sha512",

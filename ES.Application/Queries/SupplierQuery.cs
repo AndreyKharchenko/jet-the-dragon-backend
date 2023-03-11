@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ES.Application.Queries
 {
-    internal class SupplierQuery
+    public sealed class SupplierQuery
     {
         public string Email { get; set; }
     }

@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "Vouchers.IdentityServer": {
+    "Es.IdentityServer": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",

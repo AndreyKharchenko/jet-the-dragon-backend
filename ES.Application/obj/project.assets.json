@@ -288,11 +288,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\CSharp\\ES.Backend\\ES.Application\\ES.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.Application\\ES.Application.csproj",
       "projectName": "ES.Application",
-      "projectPath": "D:\\Projects\\CSharp\\ES.Backend\\ES.Application\\ES.Application.csproj",
+      "projectPath": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.Application\\ES.Application.csproj",
       "packagesPath": "C:\\Users\\Kharc\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\CSharp\\ES.Backend\\ES.Application\\obj\\",
+      "outputPath": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kharc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -309,8 +309,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Projects\\CSharp\\ES.Backend\\ES.Domain\\ES.Domain.csproj": {
-              "projectPath": "D:\\Projects\\CSharp\\ES.Backend\\ES.Domain\\ES.Domain.csproj"
+            "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.Domain\\ES.Domain.csproj": {
+              "projectPath": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.Domain\\ES.Domain.csproj"
             }
           }
         }

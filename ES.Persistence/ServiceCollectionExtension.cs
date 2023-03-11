@@ -23,7 +23,7 @@ namespace ES.Application.Infrastructure
         {
             services.AddScoped<IHandler<CategoryQuery, IEnumerable<CategoryDto>>, CategoryQueryHandler>();
             services.AddScoped<IHandler<CustomerQuery, CustomerDto>, CustomerQueryHandler>();
-            services.AddScoped<IHandler<SuppliersQuery, SupplierDto>, SupplierQueryHandler>();
+            services.AddScoped<IHandler<SupplierQuery, SupplierDto>, SupplierQueryHandler>();
             return services;
         }
 

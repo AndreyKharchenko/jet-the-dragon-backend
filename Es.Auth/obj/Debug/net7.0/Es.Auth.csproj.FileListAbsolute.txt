@@ -22,3 +22,15 @@ D:\Projects\CSharp\ES.Backend\Es.Auth\obj\Debug\net7.0\Es.Auth.dll
 D:\Projects\CSharp\ES.Backend\Es.Auth\obj\Debug\net7.0\refint\Es.Auth.dll
 D:\Projects\CSharp\ES.Backend\Es.Auth\obj\Debug\net7.0\Es.Auth.pdb
 D:\Projects\CSharp\ES.Backend\Es.Auth\obj\Debug\net7.0\ref\Es.Auth.dll
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\Es.Auth\bin\Debug\net7.0\Es.Auth.deps.json
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\Es.Auth\bin\Debug\net7.0\Es.Auth.dll
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\Es.Auth\bin\Debug\net7.0\Es.Auth.pdb
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\Es.Auth\obj\Debug\net7.0\Es.Auth.csproj.AssemblyReference.cache
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\Es.Auth\obj\Debug\net7.0\Es.Auth.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\Es.Auth\obj\Debug\net7.0\Es.Auth.AssemblyInfoInputs.cache
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\Es.Auth\obj\Debug\net7.0\Es.Auth.AssemblyInfo.cs
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\Es.Auth\obj\Debug\net7.0\Es.Auth.csproj.CoreCompileInputs.cache
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\Es.Auth\obj\Debug\net7.0\Es.Auth.dll
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\Es.Auth\obj\Debug\net7.0\refint\Es.Auth.dll
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\Es.Auth\obj\Debug\net7.0\Es.Auth.pdb
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\Es.Auth\obj\Debug\net7.0\ref\Es.Auth.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\CSharp\\ES.Backend\\Es.IdentityServer\\Es.IdentityServer.csproj": {}
+    "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\Es.IdentityServer\\Es.IdentityServer.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\CSharp\\ES.Backend\\Es.Auth\\Es.Auth.csproj": {
+    "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\Es.Auth\\Es.Auth.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\CSharp\\ES.Backend\\Es.Auth\\Es.Auth.csproj",
+        "projectUniqueName": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\Es.Auth\\Es.Auth.csproj",
         "projectName": "Es.Auth",
-        "projectPath": "D:\\Projects\\CSharp\\ES.Backend\\Es.Auth\\Es.Auth.csproj",
+        "projectPath": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\Es.Auth\\Es.Auth.csproj",
         "packagesPath": "C:\\Users\\Kharc\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\CSharp\\ES.Backend\\Es.Auth\\obj\\",
+        "outputPath": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\Es.Auth\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kharc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -81,14 +81,14 @@
         }
       }
     },
-    "D:\\Projects\\CSharp\\ES.Backend\\Es.IdentityServer\\Es.IdentityServer.csproj": {
+    "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\Es.IdentityServer\\Es.IdentityServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\CSharp\\ES.Backend\\Es.IdentityServer\\Es.IdentityServer.csproj",
+        "projectUniqueName": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\Es.IdentityServer\\Es.IdentityServer.csproj",
         "projectName": "Es.IdentityServer",
-        "projectPath": "D:\\Projects\\CSharp\\ES.Backend\\Es.IdentityServer\\Es.IdentityServer.csproj",
+        "projectPath": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\Es.IdentityServer\\Es.IdentityServer.csproj",
         "packagesPath": "C:\\Users\\Kharc\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\CSharp\\ES.Backend\\Es.IdentityServer\\obj\\",
+        "outputPath": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\Es.IdentityServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kharc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -105,8 +105,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Projects\\CSharp\\ES.Backend\\Es.Auth\\Es.Auth.csproj": {
-                "projectPath": "D:\\Projects\\CSharp\\ES.Backend\\Es.Auth\\Es.Auth.csproj"
+              "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\Es.Auth\\Es.Auth.csproj": {
+                "projectPath": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\Es.Auth\\Es.Auth.csproj"
               }
             }
           }

@@ -10,3 +10,15 @@ D:\Projects\CSharp\ES.Backend\ES.Domain\obj\Debug\net6.0\ES.Domain.dll
 D:\Projects\CSharp\ES.Backend\ES.Domain\obj\Debug\net6.0\refint\ES.Domain.dll
 D:\Projects\CSharp\ES.Backend\ES.Domain\obj\Debug\net6.0\ES.Domain.pdb
 D:\Projects\CSharp\ES.Backend\ES.Domain\obj\Debug\net6.0\ref\ES.Domain.dll
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\ES.Domain\bin\Debug\net6.0\ES.Domain.deps.json
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\ES.Domain\bin\Debug\net6.0\ES.Domain.dll
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\ES.Domain\bin\Debug\net6.0\ES.Domain.pdb
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\ES.Domain\obj\Debug\net6.0\ES.Domain.csproj.AssemblyReference.cache
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\ES.Domain\obj\Debug\net6.0\ES.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\ES.Domain\obj\Debug\net6.0\ES.Domain.AssemblyInfoInputs.cache
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\ES.Domain\obj\Debug\net6.0\ES.Domain.AssemblyInfo.cs
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\ES.Domain\obj\Debug\net6.0\ES.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\ES.Domain\obj\Debug\net6.0\ES.Domain.dll
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\ES.Domain\obj\Debug\net6.0\refint\ES.Domain.dll
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\ES.Domain\obj\Debug\net6.0\ES.Domain.pdb
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\ES.Domain\obj\Debug\net6.0\ref\ES.Domain.dll

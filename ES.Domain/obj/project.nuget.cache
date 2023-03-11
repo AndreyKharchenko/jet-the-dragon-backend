@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Wew8S+AC/pmFbE9K7RpreE4UhEblRmjw+jiaWslyg4YGEiq3ekyOCWXH/BVQuhD+l8hHPqSA7XCI03ITJhLKHw==",
+  "dgSpecHash": "weFeNnSkWKQ1Gg9XcMChLCIxHFdoaPbo0HzFNXNWfS0X5i06EkF30iyoCWnLBIh+SVbtHXkh7d05h/P/gUm7Uw==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\CSharp\\ES.Backend\\ES.Domain\\ES.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.Domain\\ES.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

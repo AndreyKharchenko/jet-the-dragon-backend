@@ -79,8 +79,14 @@ namespace ES.Application.UseCases.CustomerCases
                 customer.Address.FlatNumber = command.FlatNumber;
                 isChanged = true;
             }
-            
-            
+
+            if (command.Region is not null && command.Region != customer.Address.Region)
+            {
+                customer.Address.Region = command.Region;
+                isChanged = true;
+            }
+
+
             if (isChanged)
             {
                 await _customersRepository.UpdateAsync(customer);

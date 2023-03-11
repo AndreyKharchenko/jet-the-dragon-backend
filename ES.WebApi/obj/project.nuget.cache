@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FbR+DfREvQLw89S3fk0H3lwCXbowQUGU3ZYMQ3KMD6vjq7uvRMKHLiwf67k6Xmz0H6AKN6XUAkbwQIzLSWRGIQ==",
+  "dgSpecHash": "blaJCfadF09zbWy6igCXAHafaOA7spDaDFe0BB9kpmLPjYPsPL3yWVo6cPNLieqbgyWQfHwG1UV1NlvPe1rVXA==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\CSharp\\ES.Backend\\ES.WebApi\\ES.WebApi.csproj",
+  "projectFilePath": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.WebApi\\ES.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kharc\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Kharc\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\CSharp\\ES.Backend\\Es.Auth\\Es.Auth.csproj": {}
+    "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\Es.Auth\\Es.Auth.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\CSharp\\ES.Backend\\Es.Auth\\Es.Auth.csproj": {
+    "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\Es.Auth\\Es.Auth.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\CSharp\\ES.Backend\\Es.Auth\\Es.Auth.csproj",
+        "projectUniqueName": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\Es.Auth\\Es.Auth.csproj",
         "projectName": "Es.Auth",
-        "projectPath": "D:\\Projects\\CSharp\\ES.Backend\\Es.Auth\\Es.Auth.csproj",
+        "projectPath": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\Es.Auth\\Es.Auth.csproj",
         "packagesPath": "C:\\Users\\Kharc\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\CSharp\\ES.Backend\\Es.Auth\\obj\\",
+        "outputPath": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\Es.Auth\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kharc\\AppData\\Roaming\\NuGet\\NuGet.Config",

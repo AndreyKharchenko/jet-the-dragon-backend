@@ -36,6 +36,7 @@ namespace ES.Application.UseCases.CustomerCases
                     Street = command.Street,
                     HouseNumber = command.HouseNumber,
                     FlatNumber = command.FlatNumber,
+                    Region = command.Region
                 }
             };
 
