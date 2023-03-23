@@ -10,8 +10,9 @@ namespace ES.WebApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    
-    
+    [Authorize]
+
+
     public class CategoryController: Controller
     {
         private readonly IDispatcher _dispatcher;

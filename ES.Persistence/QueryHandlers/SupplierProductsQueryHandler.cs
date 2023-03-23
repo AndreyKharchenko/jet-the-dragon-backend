@@ -46,8 +46,43 @@ namespace ES.Persistence.QueryHandlers
                 productQuery = productQuery.Where(a => a.CategoryId == query.CategoryId);
             }
 
+            // ShelfLife
+            if (query.MinShelfLife is not null)
+            {
+                productQuery = productQuery.Where(a => (a.ShelfLife >= query.MinShelfLife));
+            }
+
+            if (query.MaxShelfLife is not null)
+            {
+                productQuery = productQuery.Where(a => (a.ShelfLife <= query.MaxShelfLife));
+            }
+
+            // Manufacture date
+            if (query.MinManufactureDate is not null)
+            {
+                productQuery = productQuery.Where(a => (a.ManufactureDate >= query.MinManufactureDate));
+            }
+
+            if (query.MaxManufactureDate is not null)
+            {
+                productQuery = productQuery.Where(a => (a.ManufactureDate <= query.MaxManufactureDate));
+            }
+
+            // Rating
+
+            if (query.MinRating is not null)
+            {
+                productQuery = productQuery.Where(a => (a.Rating >= query.MinRating));
+            }
+
+            if (query.MaxRating is not null)
+            {
+                productQuery = productQuery.Where(a => (a.Rating <= query.MaxRating));
+            }
+
             return await productQuery.Select(x => new ProductDto()
             {
+                Id = x.Id,
                 CategoryId = x.CategoryId,
                 SupplierId = x.SupplierId,
                 Name = x.Name,

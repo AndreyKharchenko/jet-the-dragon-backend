@@ -16,19 +16,26 @@ namespace ES.Application.UseCases.ProductCases
         private readonly IRepository<Product> _productRepository;
         private readonly IRepository<Category> _categoryRepository;
         private readonly IRepository<Supplier> _supplierRepository;
+        private readonly ILoginNameProvider _loginNameProvider;
 
-        
-        public CreateProductCommandHandler(IRepository<Product> productRepository, IRepository<Category> categoryRepository, IRepository<Supplier> supplierRepository)
+        public CreateProductCommandHandler(IRepository<Product> productRepository, IRepository<Category> categoryRepository, IRepository<Supplier> supplierRepository, ILoginNameProvider loginNameProvider)
         {
             _productRepository = productRepository;
             _categoryRepository = categoryRepository;
             _supplierRepository = supplierRepository;
-            
+            _loginNameProvider = loginNameProvider;
         }
 
         public async Task<Guid> HandleAsync(CreateProductCommand command, CancellationToken cancellation)
         {
-            var supplier = await _supplierRepository.GetByIdAsync(command.SupplierId);
+            var email = _loginNameProvider.CurrentLoginName;
+            if (email is null)
+            {
+                throw new ApplicationException("Email of supplier not exist");
+            }
+
+            var supplier = (await _supplierRepository.GetByExpressionAsync(x => x.Customer.Email == email)).FirstOrDefault();
+
             if(supplier is null)
             {
                 throw new ApplicationException("Supplier not exist");
@@ -56,7 +63,9 @@ namespace ES.Application.UseCases.ProductCases
             };*/
 
             
+           
 
+            
             var product = new Product()
             {
                 Id = Guid.NewGuid(),
@@ -73,7 +82,8 @@ namespace ES.Application.UseCases.ProductCases
                 Rating = command.Rating,
             };
 
-            foreach(var charak in command.ProductCharaks)
+            product.ProductCharaks = new List<ProductCharaks>();
+            foreach (var charak in command.ProductCharaks)
             {
                 product.ProductCharaks.Add(new ProductCharaks()
                 {
@@ -86,8 +96,10 @@ namespace ES.Application.UseCases.ProductCases
             }
 
             _productRepository.Add(product);
-
             return product.Id;
+            
+
+            
 
         }
 

@@ -9,6 +9,6 @@ namespace ES.Application.Queries
 {
     public sealed class CategoryQuery: ListQuery
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
     }
 }

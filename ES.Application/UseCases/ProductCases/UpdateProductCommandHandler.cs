@@ -15,32 +15,43 @@ namespace ES.Application.UseCases.ProductCases
         private readonly IRepository<Product> _productRepository;
         private readonly IRepository<Category> _categoryRepository;
         private readonly IRepository<Supplier> _supplierRepository;
-        public UpdateProductCommandHandler(IRepository<Product> productRepository, IRepository<Category> categoryRepository, IRepository<Supplier> supplierRepository)
+        private readonly ILoginNameProvider _loginNameProvider;
+        public UpdateProductCommandHandler(IRepository<Product> productRepository, IRepository<Category> categoryRepository, IRepository<Supplier> supplierRepository, ILoginNameProvider loginNameProvider)
         {
             _productRepository = productRepository;
             _categoryRepository = categoryRepository;
             _supplierRepository = supplierRepository;
+            _loginNameProvider = loginNameProvider;
         }
 
         public async Task HandleAsync(UpdateProductCommand command, CancellationToken cancellation)
         {
+            var email = _loginNameProvider.CurrentLoginName;
+            if (email == null)
+            {
+                throw new ApplicationException("Email of supplier not exist");
+            }
 
             var product = await _productRepository.GetByIdAsync(command.ProductId);
             var isChanged = false;
 
             if(command.SupplierId is not null)
             {
-                var supplier = await _supplierRepository.GetByIdAsync(command.SupplierId.Value);
+                //var supplier = await _supplierRepository.GetByIdAsync(command.SupplierId.Value);
+                var supplier = (await _supplierRepository.GetByExpressionAsync(x => x.Customer.Email == email)).FirstOrDefault();
                 if (supplier is null)
                 {
                     throw new ApplicationException("Supplier not exist");
                 }
 
+                
                 product.Supplier = supplier;
-                product.SupplierId = command.SupplierId.Value;
-            } 
-            
-            if(command.CategoryId is not null)
+                product.SupplierId = product.Supplier.Id;
+                ///product.SupplierId = command.SupplierId.Value;
+
+            }
+
+            if (command.CategoryId is not null)
             {
                 var category = await _categoryRepository.GetByIdAsync(command.CategoryId.Value);
                 if (category is null)
@@ -87,6 +98,7 @@ namespace ES.Application.UseCases.ProductCases
 
             if(command.ProductCharaks is not null)
             {
+                
                 product.ProductCharaks.Clear();
 
                 foreach (var charak in command.ProductCharaks)

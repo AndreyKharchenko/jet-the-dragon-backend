@@ -149,6 +149,25 @@ namespace ES.Persistence.Migrations
                     b.ToTable("Favourities", (string)null);
                 });
 
+            modelBuilder.Entity("ES.Domain.Image", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("bytea");
+
+                    b.Property<Guid>("SubjectId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Image", (string)null);
+                });
+
             modelBuilder.Entity("ES.Domain.Order", b =>
                 {
                     b.Property<Guid>("Id")

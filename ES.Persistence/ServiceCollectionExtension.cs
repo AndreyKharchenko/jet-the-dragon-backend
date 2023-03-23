@@ -24,6 +24,9 @@ namespace ES.Application.Infrastructure
             services.AddScoped<IHandler<CategoryQuery, IEnumerable<CategoryDto>>, CategoryQueryHandler>();
             services.AddScoped<IHandler<CustomerQuery, CustomerDto>, CustomerQueryHandler>();
             services.AddScoped<IHandler<SupplierQuery, SupplierDto>, SupplierQueryHandler>();
+
+            services.AddScoped<IHandler<ProductsQuery, IEnumerable<ProductDto>>, ProductsQueryHandler>();
+            services.AddScoped<IHandler<SupplierProductsQuery, IEnumerable<ProductDto>>, SupplierProductsQueryHandler>();
             return services;
         }
 
@@ -32,6 +35,7 @@ namespace ES.Application.Infrastructure
             services.AddScoped<IRepository<Category>, GenericRepository<Category>>();
             services.AddScoped<IRepository<Customer>, GenericRepository<Customer>>();
             services.AddScoped<IRepository<Supplier>, SupplierRepository>();
+            services.AddScoped<IRepository<Product>, ProductRepository>();
             return services;
         }
     }

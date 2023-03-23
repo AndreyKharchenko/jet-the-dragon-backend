@@ -1,6 +1,8 @@
 ﻿using ES.Application.Dtos;
 using ES.Application.Queries;
 using ES.Application.UseCases;
+using ES.Domain;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +23,16 @@ namespace ES.Persistence.QueryHandlers
 
         public async Task<IEnumerable<CategoryDto>> HandleAsync(CategoryQuery query, CancellationToken cancellation)
         {
-            return new List<CategoryDto>();
+            //return new List<CategoryDto>();
+            var categoryQuery = _dbContext.Set<Category>().Where(x => true); // составляем SQL запрос SELECT * FROM Category
+            
+            return await categoryQuery.Select(x => new CategoryDto()
+            {
+                Id = x.Id,
+                Name = x.Name,
+                Description = x.Description,
+                CategoryImageId = _dbContext.Set<Image>().Where(i => i.SubjectId == x.Id).Select(i => i.Id).FirstOrDefault(),
+            }).GetListPageQuery(query).ToListAsync();
         }
     }
 }
