@@ -1,6 +1,8 @@
 ﻿using ES.Application.Commands.CartCommands;
 using ES.Application.Commands.CategoryCommands;
 using ES.Application.Commands.CustomerCommands;
+using ES.Application.Commands.OrderCommands;
+using ES.Application.Commands.PaymentCommands;
 using ES.Application.Commands.ProductCommands;
 using ES.Application.Commands.SupplierCommands;
 using ES.Application.Dtos;
@@ -11,6 +13,7 @@ using ES.Application.UseCases;
 using ES.Application.UseCases.CartCases;
 using ES.Application.UseCases.CategoryCases;
 using ES.Application.UseCases.CustomerCases;
+using ES.Application.UseCases.OrderCases;
 using ES.Application.UseCases.ProductCases;
 using ES.Application.UseCases.SupplierCases;
 using Microsoft.Extensions.Configuration;
@@ -42,10 +45,19 @@ namespace ES.Application.Infrastructure
             // Product
             services.AddScoped<IHandler<CreateProductCommand, Guid>, CreateProductCommandHandler>();
             services.AddScoped<IHandler<UpdateProductCommand>, UpdateProductCommandHandler>();
+            services.AddScoped<IHandler<DeleteProductCommand>, DeleteProductCommandHandler>();
 
             // Cart
-            //services.AddScoped<IHandler<CreateCartCommand, Guid>, CreateCartCommandHandler>();
-            //services.AddScoped<IHandler<UpdateCartCommand>, UpdateCartCommandHandler>();
+            services.AddScoped<IHandler<CreateCartCommand, Guid>, CreateCartCommandHandler>();
+            services.AddScoped<IHandler<UpdateCartCommand>, UpdateCartCommandHandler>();
+
+            // Order
+            services.AddScoped<IHandler<CreateOrderCommand, Guid>, CreateOrderCommandHandler>();
+            services.AddScoped<IHandler<UpdateOrderCommand>, UpdateOrderCommandHandler>();
+            services.AddScoped<IHandler<DeleteOrderCommand>, DeleteOrderCommandHandler>();
+
+            // Payment
+            services.AddScoped<IHandler<CreatePaymentCommand>, CreatePaymentCommandHandler>();
 
             return services;
         }
@@ -55,6 +67,8 @@ namespace ES.Application.Infrastructure
         {
             
             services.AddScoped<IAppImageService, AppImageService>();
+
+            services.AddScoped<IAuthCustomerProvider, AuthCustomerProvider>();
 
             return services;
         }

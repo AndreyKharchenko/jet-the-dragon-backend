@@ -80,6 +80,7 @@ namespace ES.Application.UseCases.ProductCases
                 ManufactureDate = command.ManufactureDate,
                 Count = command.Count,
                 Rating = command.Rating,
+                Unit = command.Unit,
             };
 
             product.ProductCharaks = new List<ProductCharaks>();

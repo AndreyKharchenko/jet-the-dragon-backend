@@ -34,6 +34,8 @@ namespace ES.Application.Commands.ProductCommands
         public int ShelfLife { get; set; }
         public DateTime ManufactureDate { get; set; }
         public decimal Rating { get; set; }
+
+        public string Unit { get; set; }
         public ProductCharaksDto[] ProductCharaks { get; set; }
     }
 }

@@ -129,6 +129,12 @@ namespace ES.Application.UseCases.ProductCases
                 isChanged = true;
             }
 
+            if (command.Unit is not null && command.Unit != product.Unit)
+            {
+                product.Unit = command.Unit;
+                isChanged = true;
+            }
+
 
             if (isChanged)
             {

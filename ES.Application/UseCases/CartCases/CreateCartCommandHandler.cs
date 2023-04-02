@@ -29,7 +29,14 @@ namespace ES.Application.UseCases.CartCases
             {
                 throw new ApplicationException("Customer not exist");
             }
-            var cart = new Cart()
+            var cart = (await _cartRepository.GetByExpressionAsync(x => x.CustomerId == customer.Id && x.Status == CartStatus.Created)).FirstOrDefault();
+
+            if(cart is not null)
+            {
+                return cart.Id;
+            }
+
+            cart = new Cart()
             {
                 Id = Guid.NewGuid(),
                 Customer = customer,

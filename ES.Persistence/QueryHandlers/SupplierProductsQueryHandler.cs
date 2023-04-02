@@ -92,6 +92,7 @@ namespace ES.Persistence.QueryHandlers
                 ShelfLife = x.ShelfLife,
                 ManufactureDate = x.ManufactureDate,
                 Rating = x.Rating,
+                Unit = x.Unit,
                 ProductCharaks = x.ProductCharaks.Select(y => new ProductCharaksDto()
                 {
                     Key = y.Key,

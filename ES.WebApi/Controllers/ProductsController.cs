@@ -1,4 +1,5 @@
 ﻿using ES.Application.Commands.CategoryCommands;
+using ES.Application.Commands.OrderCommands;
 using ES.Application.Commands.ProductCommands;
 using ES.Application.Dtos;
 using ES.Application.Queries;
@@ -36,6 +37,14 @@ namespace ES.WebApi.Controllers
 
         [HttpPut]
         public async Task<IActionResult> Put(UpdateProductCommand command)
+        {
+            await _dispatcher.DispatchAsync(command);
+            return NoContent();
+        }
+
+
+        [HttpDelete]
+        public async Task<IActionResult> Delete([FromQuery] DeleteProductCommand command)
         {
             await _dispatcher.DispatchAsync(command);
             return NoContent();

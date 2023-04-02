@@ -31,6 +31,8 @@ namespace ES.Persistence.Configurations
                 .HasForeignKey(product => product.SupplierId)
                 .OnDelete(DeleteBehavior.Restrict);
 
+            
+
             builder.Property<byte[]>("RowVersion").IsRowVersion();
 
         }

@@ -30,6 +30,8 @@ namespace ES.Application.Dtos
         public int ShelfLife { get; set; }
         public DateTime ManufactureDate { get; set; }
         public decimal Rating { get; set; }
+
+        public string Unit { get; set; }
         public Guid[] ProductImages { get; set; }
         public ProductCharaksDto[] ProductCharaks { get; set; }
     }

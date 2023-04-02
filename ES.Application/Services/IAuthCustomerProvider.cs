@@ -6,7 +6,7 @@ using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ES.Application.Infrastructure
+namespace ES.Application.Services
 {
     public interface IAuthCustomerProvider
     {

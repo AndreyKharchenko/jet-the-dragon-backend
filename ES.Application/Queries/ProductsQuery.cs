@@ -20,6 +20,8 @@ namespace ES.Application.Queries
         public Guid ProductImageId { get; set; }
         public DateTime ExpirationDate { get; set; }*/
         public Guid? CategoryId { get; set; }
+
+        public Guid? SupplierId { get; set; }
         public int? MinShelfLife { get; set; }
         public int? MaxShelfLife { get; set; }
         public DateTime? MinManufactureDate { get; set; }

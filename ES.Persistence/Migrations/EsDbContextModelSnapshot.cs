@@ -240,6 +240,10 @@ namespace ES.Persistence.Migrations
                     b.Property<Guid>("SupplierId")
                         .HasColumnType("uuid");
 
+                    b.Property<string>("Unit")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
@@ -252,7 +256,6 @@ namespace ES.Persistence.Migrations
             modelBuilder.Entity("ES.Domain.ProductCharaks", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
                     b.Property<string>("Key")
@@ -262,6 +265,14 @@ namespace ES.Persistence.Migrations
                     b.Property<Guid>("ProductId")
                         .HasColumnType("uuid");
 
+                    b.Property<Guid?>("ProductId1")
+                        .HasColumnType("uuid");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("bytea");
+
                     b.Property<string>("Value")
                         .IsRequired()
                         .HasColumnType("text");
@@ -270,7 +281,9 @@ namespace ES.Persistence.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("ProductCharaks");
+                    b.HasIndex("ProductId1");
+
+                    b.ToTable("ProductCharaks", (string)null);
                 });
 
             modelBuilder.Entity("ES.Domain.Supplier", b =>
@@ -447,10 +460,14 @@ namespace ES.Persistence.Migrations
             modelBuilder.Entity("ES.Domain.ProductCharaks", b =>
                 {
                     b.HasOne("ES.Domain.Product", "Product")
-                        .WithMany("ProductCharaks")
+                        .WithMany()
                         .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+
+                    b.HasOne("ES.Domain.Product", null)
+                        .WithMany("ProductCharaks")
+                        .HasForeignKey("ProductId1");
 
                     b.Navigation("Product");
                 });

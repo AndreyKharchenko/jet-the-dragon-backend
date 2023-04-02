@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ES.Application.Commands.ProductCommands
 {
-    internal class DeleteProductCommand
+    public sealed class DeleteProductCommand
     {
+        public Guid ProductId { get; set; }
     }
 }

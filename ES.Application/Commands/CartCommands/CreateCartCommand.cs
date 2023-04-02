@@ -9,7 +9,7 @@ namespace ES.Application.Commands.CartCommands
 {
     public sealed class CreateCartCommand
     {
-        [Required]
+        
         public string DeliveryType { get; set; }
 
         public string PaymentType { get; set; }

@@ -31,6 +31,8 @@ namespace ES.Domain
         public int ShelfLife { get; set; }
         public DateTime ManufactureDate { get; set; }
         public decimal Rating { get; set; }
+
+        public string Unit { get; set; }
         public ICollection<ProductCharaks> ProductCharaks { get; set; }
         
     }

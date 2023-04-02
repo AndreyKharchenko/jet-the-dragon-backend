@@ -32,6 +32,11 @@ namespace ES.Persistence.QueryHandlers
                 productQuery = productQuery.Where(a => a.CategoryId == query.CategoryId);
             }
 
+            if (query.SupplierId is not null)
+            {
+                productQuery = productQuery.Where(a => a.SupplierId == query.SupplierId);
+            }
+
             // ShelfLife
             if (query.MinShelfLife is not null)
             {
@@ -78,6 +83,7 @@ namespace ES.Persistence.QueryHandlers
                 ShelfLife = x.ShelfLife,
                 ManufactureDate = x.ManufactureDate,
                 Rating = x.Rating,
+                Unit = x.Unit,
                 ProductCharaks = x.ProductCharaks.Select(y => new ProductCharaksDto()
                 {
                     Key = y.Key,
