@@ -48,6 +48,9 @@ namespace ES.Persistence.Migrations
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("bytea");
 
+                    b.Property<int>("State")
+                        .HasColumnType("integer");
+
                     b.Property<int>("Status")
                         .HasColumnType("integer");
 
@@ -86,6 +89,9 @@ namespace ES.Persistence.Migrations
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("bytea");
 
+                    b.Property<int>("State")
+                        .HasColumnType("integer");
+
                     b.HasKey("Id");
 
                     b.ToTable("Category", (string)null);
@@ -118,6 +124,9 @@ namespace ES.Persistence.Migrations
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("bytea");
 
+                    b.Property<int>("State")
+                        .HasColumnType("integer");
+
                     b.HasKey("Id");
 
                     b.ToTable("Customer", (string)null);
@@ -140,6 +149,9 @@ namespace ES.Persistence.Migrations
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("bytea");
 
+                    b.Property<int>("State")
+                        .HasColumnType("integer");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CustomerId");
@@ -159,6 +171,9 @@ namespace ES.Persistence.Migrations
                         .IsConcurrencyToken()
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("bytea");
+
+                    b.Property<int>("State")
+                        .HasColumnType("integer");
 
                     b.Property<Guid>("SubjectId")
                         .HasColumnType("uuid");
@@ -183,6 +198,9 @@ namespace ES.Persistence.Migrations
                     b.Property<int>("Count")
                         .HasColumnType("integer");
 
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("timestamp with time zone");
+
                     b.Property<Guid>("ProductId")
                         .HasColumnType("uuid");
 
@@ -190,6 +208,9 @@ namespace ES.Persistence.Migrations
                         .IsConcurrencyToken()
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("bytea");
+
+                    b.Property<int>("State")
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -237,6 +258,9 @@ namespace ES.Persistence.Migrations
                     b.Property<int>("ShelfLife")
                         .HasColumnType("integer");
 
+                    b.Property<int>("State")
+                        .HasColumnType("integer");
+
                     b.Property<Guid>("SupplierId")
                         .HasColumnType("uuid");
 
@@ -272,6 +296,9 @@ namespace ES.Persistence.Migrations
                         .IsConcurrencyToken()
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("bytea");
+
+                    b.Property<int>("State")
+                        .HasColumnType("integer");
 
                     b.Property<string>("Value")
                         .IsRequired()
@@ -333,6 +360,9 @@ namespace ES.Persistence.Migrations
                     b.Property<string>("SanBookNum")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<int>("State")
+                        .HasColumnType("integer");
 
                     b.Property<Guid?>("SupplierImageId")
                         .HasColumnType("uuid");

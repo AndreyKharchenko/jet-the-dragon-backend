@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ES.Application.UseCases.ImageCases
 {
-    internal class DeleteImageCommandHandler
+    internal class DeleteImageCommandHandler : IHandler<DeleteImageCommand>
     {
         private readonly IRepository<Image> _imagesRepository;
         private readonly IAppImageService _appImageService;

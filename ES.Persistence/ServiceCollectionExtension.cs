@@ -30,6 +30,11 @@ namespace ES.Application.Infrastructure
 
             services.AddScoped<IHandler<CartQuery, CartDto>, CartQueryHandler>();
             services.AddScoped<IHandler<OrderQuery, IEnumerable<OrderDto>>, OrdersQueryHandler>();
+            services.AddScoped<IHandler<OrderConfirmPayQuery, IEnumerable<OrderConfirmPayDto>>, OrdersConfirmPayQueryHandler>();
+
+            services.AddScoped<IHandler<FavouritiesQuery, IEnumerable<FavouritiesDto>>, FavouritiesQueryHandler>();
+
+            services.AddScoped<IHandler<AnalyticQuery, IEnumerable<AnalyticDto>>, AnalyticQueryHandler>();
             return services;
         }
 
@@ -41,6 +46,8 @@ namespace ES.Application.Infrastructure
             services.AddScoped<IRepository<Product>, ProductRepository>();
             services.AddScoped<IRepository<Cart>, GenericRepository<Cart>>();
             services.AddScoped<IRepository<Order>, OrderRepository>();
+            services.AddScoped<IRepository<Favourities>, GenericRepository<Favourities>>();
+            services.AddScoped<IRepository<Image>, GenericRepository<Image>>();
             return services;
         }
     }

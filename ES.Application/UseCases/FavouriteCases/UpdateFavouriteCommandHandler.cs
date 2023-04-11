@@ -10,23 +10,23 @@ using System.Threading.Tasks;
 
 namespace ES.Application.UseCases.FavouritiesCases
 {
-    internal class UpdateFavouritiesCommandHandler : IHandler<UpdateFavouritiesCommand>
+    internal class UpdateFavouriteCommandHandler : IHandler<UpdateFavouriteCommand>
     {
         private readonly IRepository<Favourities> _favouritiesRepository;
         private readonly IRepository<Customer> _customerRepository;
         private readonly IRepository<Product> _productRepository;
 
-        public UpdateFavouritiesCommandHandler(IRepository<Favourities> favouritiesRepository, IRepository<Customer> customerRepository, IRepository<Product> productRepository)
+        public UpdateFavouriteCommandHandler(IRepository<Favourities> favouritiesRepository, IRepository<Customer> customerRepository, IRepository<Product> productRepository)
         {
             _favouritiesRepository = favouritiesRepository;
             _customerRepository = customerRepository;
             _productRepository = productRepository;
         }
 
-        public async Task HandleAsync(UpdateFavouritiesCommand command, CancellationToken cancellation)
+        public async Task HandleAsync(UpdateFavouriteCommand command, CancellationToken cancellation)
         {
 
-            var favouritie = await _favouritiesRepository.GetByIdAsync(command.FavouritiesId);
+            var favourite = await _favouritiesRepository.GetByIdAsync(command.FavouriteId);
             var isChanged = false;
 
             if (command.CustomerId is not null)
@@ -37,8 +37,8 @@ namespace ES.Application.UseCases.FavouritiesCases
                     throw new ApplicationException("Customer not exist");
                 }
 
-                favouritie.Customer = customer;
-                favouritie.CustomerId = command.CustomerId.Value;
+                favourite.Customer = customer;
+                favourite.CustomerId = command.CustomerId.Value;
             }
 
             if (command.ProductId is not null)
@@ -49,13 +49,13 @@ namespace ES.Application.UseCases.FavouritiesCases
                     throw new ApplicationException("Product not exist");
                 }
 
-                favouritie.Product = product;
-                favouritie.ProductId = command.ProductId.Value;
+                favourite.Product = product;
+                favourite.ProductId = command.ProductId.Value;
             }
 
             if (isChanged)
             {
-                await _favouritiesRepository.UpdateAsync(favouritie);
+                await _favouritiesRepository.UpdateAsync(favourite);
             }
         }
     }

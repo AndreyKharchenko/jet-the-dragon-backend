@@ -11,7 +11,7 @@ namespace ES.WebApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    [Authorize]
+    //[Authorize]
     public class ProductsController : Controller
     {
         private readonly IDispatcher _dispatcher;
@@ -29,6 +29,7 @@ namespace ES.WebApi.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Post(CreateProductCommand command)
         {
             var productId = await _dispatcher.DispatchAsync<CreateProductCommand, Guid>(command);
@@ -36,6 +37,7 @@ namespace ES.WebApi.Controllers
         }
 
         [HttpPut]
+        [Authorize]
         public async Task<IActionResult> Put(UpdateProductCommand command)
         {
             await _dispatcher.DispatchAsync(command);
@@ -44,6 +46,7 @@ namespace ES.WebApi.Controllers
 
 
         [HttpDelete]
+        [Authorize]
         public async Task<IActionResult> Delete([FromQuery] DeleteProductCommand command)
         {
             await _dispatcher.DispatchAsync(command);

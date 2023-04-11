@@ -40,6 +40,8 @@ namespace ES.Application.UseCases.OrderCases
                 order.Cart.TotalCount -= oldOrderCount;
                 order.Cart.TotalCount += order.Count;
 
+                order.CreateDate = command.CreateDate;
+
                 isChanged = true;
             }
 

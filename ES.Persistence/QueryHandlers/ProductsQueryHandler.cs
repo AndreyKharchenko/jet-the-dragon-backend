@@ -26,8 +26,10 @@ namespace ES.Persistence.QueryHandlers
             //return new List<ProductDto>();
             var productQuery = _dbContext.Set<Product>().AsQueryable(); // составляем SQL запрос SELECT * FROM Products
 
+            productQuery = productQuery.Where(a => a.State == Domain.EntityState.None);
+
             // Фильтры по значениям 
-            if(query.CategoryId is not null)
+            if (query.CategoryId is not null)
             {
                 productQuery = productQuery.Where(a => a.CategoryId == query.CategoryId);
             }

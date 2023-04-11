@@ -10,7 +10,7 @@ namespace ES.WebApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    [Authorize]
+    //[Authorize]
 
 
     public class CategoryController: Controller
@@ -30,6 +30,7 @@ namespace ES.WebApi.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Post( [FromForm] CreateCategoryCommand command)
         {
             var categoryId = await _dispatcher.DispatchAsync<CreateCategoryCommand, Guid>(command);
@@ -37,6 +38,7 @@ namespace ES.WebApi.Controllers
         }
 
         [HttpPut]
+        [Authorize]
         public async Task<IActionResult> Put( [FromForm] UpdateCategoryCommand command)
         {
             await _dispatcher.DispatchAsync(command);

@@ -1,6 +1,9 @@
 ﻿using ES.Application.Commands.CartCommands;
 using ES.Application.Commands.CategoryCommands;
 using ES.Application.Commands.CustomerCommands;
+using ES.Application.Commands.FavouriteCommands;
+using ES.Application.Commands.FavouritiesCommands;
+using ES.Application.Commands.ImageCommands;
 using ES.Application.Commands.OrderCommands;
 using ES.Application.Commands.PaymentCommands;
 using ES.Application.Commands.ProductCommands;
@@ -13,6 +16,9 @@ using ES.Application.UseCases;
 using ES.Application.UseCases.CartCases;
 using ES.Application.UseCases.CategoryCases;
 using ES.Application.UseCases.CustomerCases;
+using ES.Application.UseCases.FavouriteCases;
+using ES.Application.UseCases.FavouritiesCases;
+using ES.Application.UseCases.ImageCases;
 using ES.Application.UseCases.OrderCases;
 using ES.Application.UseCases.ProductCases;
 using ES.Application.UseCases.SupplierCases;
@@ -56,8 +62,17 @@ namespace ES.Application.Infrastructure
             services.AddScoped<IHandler<UpdateOrderCommand>, UpdateOrderCommandHandler>();
             services.AddScoped<IHandler<DeleteOrderCommand>, DeleteOrderCommandHandler>();
 
+            // Favourite
+            services.AddScoped<IHandler<CreateFavouriteCommand, Guid>, CreateFavouriteCommandHandler>();
+            services.AddScoped<IHandler<UpdateFavouriteCommand>, UpdateFavouriteCommandHandler>();
+            services.AddScoped<IHandler<DeleteFavouriteCommand>, DeleteFavouriteCommandHandler>();
+
             // Payment
             services.AddScoped<IHandler<CreatePaymentCommand>, CreatePaymentCommandHandler>();
+
+            // Images
+            services.AddScoped<IHandler<CreateImagesCommand>, CreateImageCommandHandler>();
+            services.AddScoped<IHandler<DeleteImageCommand>, DeleteImageCommandHandler>();
 
             return services;
         }

@@ -196,3 +196,4 @@ C:\Users\Kharc\source\repos\jet-the-dragon-backend\ES.WebApi\obj\Debug\net6.0\re
 C:\Users\Kharc\source\repos\jet-the-dragon-backend\ES.WebApi\obj\Debug\net6.0\ES.WebApi.pdb
 C:\Users\Kharc\source\repos\jet-the-dragon-backend\ES.WebApi\obj\Debug\net6.0\ES.WebApi.genruntimeconfig.cache
 C:\Users\Kharc\source\repos\jet-the-dragon-backend\ES.WebApi\obj\Debug\net6.0\ref\ES.WebApi.dll
+C:\Users\Kharc\source\repos\jet-the-dragon-backend\ES.WebApi\bin\Debug\net6.0\ES.WebApi.staticwebassets.runtime.json

@@ -20,6 +20,14 @@ namespace ES.Application.Dtos
 
         public string ProductUnit { get; set; }
 
-        public Guid? ProductImageId { get; set; }
+        public Guid ProductImage { get; set; }
+
+        /*public DateTime CreateDate { get; set; }
+
+        public string CartPaymentType { get; set; }
+        public string CartDeliveryType { get; set; }
+        public string SupplierAddres { get; set; }*/
+         
+        
     }
 }

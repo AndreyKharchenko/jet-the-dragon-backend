@@ -12,6 +12,8 @@ namespace ES.Application.Commands.OrderCommands
         [Required]
         public Guid CartId { get; set; }
         public Guid ProductId { get; set; }
-        public int Count { get; set;  }
+        public int Count { get; set; }
+
+        public DateTime CreateDate {get; set; }
     }
 }

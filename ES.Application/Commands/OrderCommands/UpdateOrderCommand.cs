@@ -13,5 +13,7 @@ namespace ES.Application.Commands.OrderCommands
         public Guid OrderId { get; set; }
         public int Count { get; set; }
 
+        public DateTime CreateDate { get; set; }
+
     }
 }

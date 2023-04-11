@@ -100,6 +100,8 @@ using (var scope = app.Services.CreateScope())
 
 app.UseCors("default");
 
+app.UseStaticFiles();
+
 app.UseAuthentication();
 app.UseAuthorization();
 

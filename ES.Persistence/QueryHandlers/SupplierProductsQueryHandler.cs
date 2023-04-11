@@ -40,8 +40,10 @@ namespace ES.Persistence.QueryHandlers
             
             var productQuery = _dbContext.Set<Product>().Where(x => x.SupplierId == supplier.Id); // составляем SQL запрос SELECT * FROM Products
 
+            productQuery = productQuery.Where(a => a.State == Domain.EntityState.None);
+
             // Фильтры по значениям 
-            if(query.CategoryId is not null)
+            if (query.CategoryId is not null)
             {
                 productQuery = productQuery.Where(a => a.CategoryId == query.CategoryId);
             }

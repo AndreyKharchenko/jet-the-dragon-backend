@@ -27,7 +27,7 @@ namespace ES.Persistence.QueryHandlers
 
             if(query.CartId is not null) 
             { 
-                orderQuery = orderQuery.Where(a => a.CartId == query.CartId);
+                orderQuery = orderQuery.Where(a => (a.Cart.Status == CartStatus.Created && a.CartId == query.CartId));
             }
 
             // Product Name  
@@ -72,6 +72,7 @@ namespace ES.Persistence.QueryHandlers
                 ProductUnit = x.Product.Unit,
                 Count = x.Count,
                 Cost = x.Cost,
+                ProductImage = _dbContext.Set<Image>().Where(i => i.SubjectId == x.ProductId).Select(i => i.Id).FirstOrDefault(),
             }).GetListPageQuery(query).ToListAsync();
 
                

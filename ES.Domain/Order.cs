@@ -17,5 +17,7 @@ namespace ES.Domain
 
         public decimal Cost { get; set; }
 
+        public DateTime CreateDate { get; set; }
+
     }
 }

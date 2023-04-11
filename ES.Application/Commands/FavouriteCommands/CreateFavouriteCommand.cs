@@ -7,11 +7,10 @@ using System.Threading.Tasks;
 
 namespace ES.Application.Commands.FavouritiesCommands
 {
-    public sealed class UpdateFavouritiesCommand
+    public sealed class CreateFavouriteCommand
     {
         [Required]
-        public Guid FavouritiesId { get; set; }
-        public Guid? CustomerId { get; set; }
-        public Guid? ProductId { get; set; }
+        public Guid CustomerId { get; set; }
+        public Guid ProductId { get; set; }
     }
 }

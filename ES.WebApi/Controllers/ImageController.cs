@@ -29,7 +29,7 @@ namespace ES.WebApi.Controllers
         }
 
         [HttpDelete]
-        public async Task<IActionResult> Delete(DeleteImageCommand command)
+        public async Task<IActionResult> Delete([FromQuery] DeleteImageCommand command)
         {
             await _dispatcher.DispatchAsync(command);
             return NoContent();

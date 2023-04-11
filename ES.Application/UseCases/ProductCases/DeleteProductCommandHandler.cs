@@ -38,7 +38,9 @@ namespace ES.Application.UseCases.ProductCases
                 throw new ApplicationException("Product not exist");
             }
 
-            await _productRepository.RemoveAsync(product);
+            product.State = EntityState.Removed;
+
+            await _productRepository.UpdateAsync(product);
         }
     }
 }

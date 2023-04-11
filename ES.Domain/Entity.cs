@@ -9,5 +9,7 @@ namespace ES.Domain
     public class Entity
     {
         public Guid Id { get; set; }
+
+        public EntityState State { get; set; }
     }
 }
