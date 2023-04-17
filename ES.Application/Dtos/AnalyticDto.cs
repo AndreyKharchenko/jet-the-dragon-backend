@@ -14,7 +14,7 @@ namespace ES.Application.Dtos
 
         public string ProductName { get; set; }
 
-        public decimal ProductCount { get; set; }
+        public decimal ProductProfit { get; set; }
 
         public decimal ProductSalesCount { get; set; }
     }

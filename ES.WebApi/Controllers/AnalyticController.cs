@@ -20,11 +20,11 @@ namespace ES.WebApi.Controllers
         [HttpGet]
         public async Task<IActionResult> Get([FromQuery] AnalyticQuery query)
         {
-            var result = await _dispatcher.DispatchAsync<AnalyticQuery, AnalyticDto>(query);
-            if (result is null)
+            var result = await _dispatcher.DispatchAsync<AnalyticQuery, IEnumerable<AnalyticDto>>(query);
+            /*if (result is null)
             {
                 return NotFound();
-            }
+            }*/
             return Json(result);
         }
     }

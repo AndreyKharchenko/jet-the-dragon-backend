@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ES.Application.Queries
 {
-    public sealed class AnalyticQuery
+    public sealed class AnalyticQuery : ListQuery
     {
         public Guid SupplierId { get; set; }
     }
