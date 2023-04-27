@@ -35,7 +35,7 @@ namespace ES.Persistence.QueryHandlers
 
             orderConfirmPayQuery = 
                 orderConfirmPayQuery
-                .Where(a => (a.Cart.CustomerId == query.CustomerId && a.Cart.Status == CartStatus.ConfirmPay));
+                .Where(a => (a.Cart.CustomerId == query.CustomerId && (a.Cart.Status == CartStatus.ConfirmPay || a.Cart.Status == CartStatus.Delivered)));
 
             return await orderConfirmPayQuery.Select(x => new OrderConfirmPayDto()
             {

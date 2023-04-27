@@ -46,6 +46,7 @@ namespace ES.Application.UseCases.OrderCases
                 Count = command.Count,
                 Cost = command.Count * product.Price,
                 CreateDate = command.CreateDate,
+                isWholesale = command.isWholesale,
             };
 
             cart.TotalCost += order.Cost;

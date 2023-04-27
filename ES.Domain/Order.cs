@@ -19,5 +19,7 @@ namespace ES.Domain
 
         public DateTime CreateDate { get; set; }
 
+        public Boolean isWholesale { get; set; }
+
     }
 }

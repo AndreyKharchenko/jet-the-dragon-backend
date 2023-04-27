@@ -22,3 +22,50 @@
       height: 100px; }
   .grants-page .card label {
     font-weight: bold; }
+
+.login-page .card {
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.login-page .card .card-header {
+    background-color: #3853D8 !important;
+    text-align: center;
+    color: #FFF;
+}
+
+.login-page .card .card-body button {
+    background-color: #3853D8 !important;
+    width: 100%;
+    border-radius: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.login-page .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-page .card {
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.register-page .card .card-header {
+    background-color: #3853D8 !important;
+    text-align: center;
+    color: #FFF;
+}
+
+.register-page .card .card-body button {
+    background-color: #3853D8 !important;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.register-page .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

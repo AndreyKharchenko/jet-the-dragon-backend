@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.WebApi\\wwwroot\\Images\\0f0450a4-894b-4b59-a70d-1cb6de23f8f6.png",
+      "PackagePath": "staticwebassets\\Images\\0f0450a4-894b-4b59-a70d-1cb6de23f8f6.png"
+    },
+    {
       "Id": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.WebApi\\wwwroot\\Images\\13748094-e6e7-438d-b949-a6a1b248691b.png",
       "PackagePath": "staticwebassets\\Images\\13748094-e6e7-438d-b949-a6a1b248691b.png"
     },
@@ -9,8 +13,20 @@
       "PackagePath": "staticwebassets\\Images\\549f9310-70c5-4d17-be47-0df48790f6f5.png"
     },
     {
+      "Id": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.WebApi\\wwwroot\\Images\\5d7994c0-4521-4b09-8489-27ec4ff81373.png",
+      "PackagePath": "staticwebassets\\Images\\5d7994c0-4521-4b09-8489-27ec4ff81373.png"
+    },
+    {
+      "Id": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.WebApi\\wwwroot\\Images\\69a430be-a245-45e2-ab63-10ffd36bb927.png",
+      "PackagePath": "staticwebassets\\Images\\69a430be-a245-45e2-ab63-10ffd36bb927.png"
+    },
+    {
       "Id": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.WebApi\\wwwroot\\Images\\726b8bbc-5e0b-44c6-9769-90a028cc09a4.png",
       "PackagePath": "staticwebassets\\Images\\726b8bbc-5e0b-44c6-9769-90a028cc09a4.png"
+    },
+    {
+      "Id": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.WebApi\\wwwroot\\Images\\7878236f-1989-419d-8f47-0f31c76b52a0.png",
+      "PackagePath": "staticwebassets\\Images\\7878236f-1989-419d-8f47-0f31c76b52a0.png"
     },
     {
       "Id": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.WebApi\\wwwroot\\Images\\9754279a-6f32-4f35-b720-5969c31ccfb3.png",

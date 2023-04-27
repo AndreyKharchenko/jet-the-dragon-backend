@@ -1,6 +1,7 @@
 ﻿using ES.Application.Commands.CartCommands;
 using ES.Application.Commands.CategoryCommands;
 using ES.Application.Commands.CustomerCommands;
+using ES.Application.Commands.DeliveredCommands;
 using ES.Application.Commands.FavouriteCommands;
 using ES.Application.Commands.FavouritiesCommands;
 using ES.Application.Commands.ImageCommands;
@@ -16,6 +17,7 @@ using ES.Application.UseCases;
 using ES.Application.UseCases.CartCases;
 using ES.Application.UseCases.CategoryCases;
 using ES.Application.UseCases.CustomerCases;
+using ES.Application.UseCases.DeliveredCases;
 using ES.Application.UseCases.FavouriteCases;
 using ES.Application.UseCases.FavouritiesCases;
 using ES.Application.UseCases.ImageCases;
@@ -70,6 +72,9 @@ namespace ES.Application.Infrastructure
             // Payment
             services.AddScoped<IHandler<CreatePaymentCommand>, CreatePaymentCommandHandler>();
 
+            // Delivered
+            services.AddScoped<IHandler<CreateDeliveredCommand>, CreateDeliveredCommandHandler>();
+
             // Images
             services.AddScoped<IHandler<CreateImagesCommand>, CreateImageCommandHandler>();
             services.AddScoped<IHandler<DeleteImageCommand>, DeleteImageCommandHandler>();
@@ -84,6 +89,8 @@ namespace ES.Application.Infrastructure
             services.AddScoped<IAppImageService, AppImageService>();
 
             services.AddScoped<IAuthCustomerProvider, AuthCustomerProvider>();
+
+            services.AddScoped<IAuthSupplierProvider, AuthSupplierProvider>();
 
             return services;
         }

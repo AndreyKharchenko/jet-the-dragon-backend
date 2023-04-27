@@ -29,8 +29,11 @@ namespace ES.Application.Infrastructure
             services.AddScoped<IHandler<SupplierProductsQuery, IEnumerable<ProductDto>>, SupplierProductsQueryHandler>();
 
             services.AddScoped<IHandler<CartQuery, CartDto>, CartQueryHandler>();
+
+            // ORDERS
             services.AddScoped<IHandler<OrderQuery, IEnumerable<OrderDto>>, OrdersQueryHandler>();
             services.AddScoped<IHandler<OrderConfirmPayQuery, IEnumerable<OrderConfirmPayDto>>, OrdersConfirmPayQueryHandler>();
+            services.AddScoped<IHandler<SupplierOrderActiveQuery, IEnumerable<OrderConfirmPayDto>>, SupplierOrdersActiveQueryHandler>();
 
             services.AddScoped<IHandler<FavouritiesQuery, IEnumerable<FavouritiesDto>>, FavouritiesQueryHandler>();
 

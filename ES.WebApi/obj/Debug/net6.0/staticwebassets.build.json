@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "79pEOuzwMaq3eVBCBJUIaZQhBXkUxxa4rG3iPBXeqlQ=",
+  "Hash": "5QKnuU2M3jq/WLbsx0IhPp0zITSVEPMj9nuQGBbwQ5I=",
   "Source": "ES.WebApi",
   "BasePath": "_content/ES.WebApi",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.WebApi\\wwwroot\\Images\\0f0450a4-894b-4b59-a70d-1cb6de23f8f6.png",
+      "SourceId": "ES.WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.WebApi\\wwwroot\\",
+      "BasePath": "_content/ES.WebApi",
+      "RelativePath": "Images/0f0450a4-894b-4b59-a70d-1cb6de23f8f6.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\0f0450a4-894b-4b59-a70d-1cb6de23f8f6.png"
+    },
     {
       "Identity": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.WebApi\\wwwroot\\Images\\13748094-e6e7-438d-b949-a6a1b248691b.png",
       "SourceId": "ES.WebApi",
@@ -51,6 +68,40 @@
       "OriginalItemSpec": "wwwroot\\Images\\549f9310-70c5-4d17-be47-0df48790f6f5.png"
     },
     {
+      "Identity": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.WebApi\\wwwroot\\Images\\5d7994c0-4521-4b09-8489-27ec4ff81373.png",
+      "SourceId": "ES.WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.WebApi\\wwwroot\\",
+      "BasePath": "_content/ES.WebApi",
+      "RelativePath": "Images/5d7994c0-4521-4b09-8489-27ec4ff81373.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\5d7994c0-4521-4b09-8489-27ec4ff81373.png"
+    },
+    {
+      "Identity": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.WebApi\\wwwroot\\Images\\69a430be-a245-45e2-ab63-10ffd36bb927.png",
+      "SourceId": "ES.WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.WebApi\\wwwroot\\",
+      "BasePath": "_content/ES.WebApi",
+      "RelativePath": "Images/69a430be-a245-45e2-ab63-10ffd36bb927.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\69a430be-a245-45e2-ab63-10ffd36bb927.png"
+    },
+    {
       "Identity": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.WebApi\\wwwroot\\Images\\726b8bbc-5e0b-44c6-9769-90a028cc09a4.png",
       "SourceId": "ES.WebApi",
       "SourceType": "Discovered",
@@ -66,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\726b8bbc-5e0b-44c6-9769-90a028cc09a4.png"
+    },
+    {
+      "Identity": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.WebApi\\wwwroot\\Images\\7878236f-1989-419d-8f47-0f31c76b52a0.png",
+      "SourceId": "ES.WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.WebApi\\wwwroot\\",
+      "BasePath": "_content/ES.WebApi",
+      "RelativePath": "Images/7878236f-1989-419d-8f47-0f31c76b52a0.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\7878236f-1989-419d-8f47-0f31c76b52a0.png"
     },
     {
       "Identity": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.WebApi\\wwwroot\\Images\\9754279a-6f32-4f35-b720-5969c31ccfb3.png",

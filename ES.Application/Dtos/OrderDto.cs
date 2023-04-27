@@ -22,12 +22,14 @@ namespace ES.Application.Dtos
 
         public Guid ProductImage { get; set; }
 
+        public Boolean isWholesale { get; set; }
+
         /*public DateTime CreateDate { get; set; }
 
         public string CartPaymentType { get; set; }
         public string CartDeliveryType { get; set; }
         public string SupplierAddres { get; set; }*/
-         
-        
+
+
     }
 }

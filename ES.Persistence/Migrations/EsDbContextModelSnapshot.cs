@@ -212,6 +212,9 @@ namespace ES.Persistence.Migrations
                     b.Property<int>("State")
                         .HasColumnType("integer");
 
+                    b.Property<bool>("isWholesale")
+                        .HasColumnType("boolean");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CartId");

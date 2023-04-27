@@ -24,6 +24,8 @@ namespace ES.Application.Dtos
 
         public DateTime CreateDate { get; set; }
 
+        public Boolean isWholesale { get; set; }
+
         public string CartPaymentType { get; set; }
         public string CartDeliveryType { get; set; }
         public string SupplierAddres { get; set; }

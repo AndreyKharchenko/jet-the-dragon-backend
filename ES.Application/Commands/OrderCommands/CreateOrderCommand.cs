@@ -15,5 +15,6 @@ namespace ES.Application.Commands.OrderCommands
         public int Count { get; set; }
 
         public DateTime CreateDate {get; set; }
+        public Boolean isWholesale { get; set; }
     }
 }
