@@ -28,13 +28,15 @@
 }
 
 .login-page .card .card-header {
-    background-color: #3853D8 !important;
+   /* background-color: #3853D8 !important;*/
+    background-color: #ff4569 !important;
     text-align: center;
     color: #FFF;
 }
 
 .login-page .card .card-body button {
-    background-color: #3853D8 !important;
+    /*background-color: #3853D8 !important;*/
+    background-color: #ff4569 !important;
     width: 100%;
     border-radius: 50px;
     margin-bottom: 0.5rem;
@@ -51,13 +53,15 @@
 }
 
 .register-page .card .card-header {
-    background-color: #3853D8 !important;
+    /*background-color: #3853D8 !important;*/
+    background-color: #ff4569 !important;
     text-align: center;
     color: #FFF;
 }
 
 .register-page .card .card-body button {
-    background-color: #3853D8 !important;
+    /*background-color: #3853D8 !important;*/
+    background-color: #ff4569 !important;
     width: 100%;
     border-radius: 50px;
 }
