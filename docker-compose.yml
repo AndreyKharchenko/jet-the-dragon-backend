@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+  es.identity-server:
+    image: ${DOCKER_REGISTRY-}esidentityserver
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      #- ASPNETCORE_URLS=http://+:5000
+    ports:
+      - "5186:80"
+      - "7186:443"
+    build:
+      context: .
+      dockerfile: Es.IdentityServer/Dockerfile
+    
+  es.webapi:
+    image: ${DOCKER_REGISTRY-}eswebapi
+    build:
+      context: .
+      dockerfile: ES.WebApi/Dockerfile
+    depends_on:
+      - es.identity-server
+    ports:
+      - "5158:80"
+      - "7099:443"

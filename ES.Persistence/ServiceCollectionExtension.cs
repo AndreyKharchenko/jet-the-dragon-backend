@@ -38,6 +38,7 @@ namespace ES.Application.Infrastructure
             services.AddScoped<IHandler<FavouritiesQuery, IEnumerable<FavouritiesDto>>, FavouritiesQueryHandler>();
 
             services.AddScoped<IHandler<AnalyticQuery, IEnumerable<AnalyticDto>>, AnalyticQueryHandler>();
+            services.AddScoped<IHandler<TechMapQuery, IEnumerable<TechMapDto>>, TechMapQueryHandler>();
             return services;
         }
 
@@ -51,6 +52,7 @@ namespace ES.Application.Infrastructure
             services.AddScoped<IRepository<Order>, OrderRepository>();
             services.AddScoped<IRepository<Favourities>, GenericRepository<Favourities>>();
             services.AddScoped<IRepository<Image>, GenericRepository<Image>>();
+            services.AddScoped<IRepository<TechMap>, TechMapRepository>();
             return services;
         }
     }

@@ -9,6 +9,7 @@ using ES.Application.Commands.OrderCommands;
 using ES.Application.Commands.PaymentCommands;
 using ES.Application.Commands.ProductCommands;
 using ES.Application.Commands.SupplierCommands;
+using ES.Application.Commands.TechMapCommands;
 using ES.Application.Dtos;
 using ES.Application.Queries;
 using ES.Application.Services;
@@ -24,6 +25,7 @@ using ES.Application.UseCases.ImageCases;
 using ES.Application.UseCases.OrderCases;
 using ES.Application.UseCases.ProductCases;
 using ES.Application.UseCases.SupplierCases;
+using ES.Application.UseCases.TechMapCases;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -78,6 +80,11 @@ namespace ES.Application.Infrastructure
             // Images
             services.AddScoped<IHandler<CreateImagesCommand>, CreateImageCommandHandler>();
             services.AddScoped<IHandler<DeleteImageCommand>, DeleteImageCommandHandler>();
+
+            // TechMap
+            services.AddScoped<IHandler<CreateTechMapCommand, Guid>, CreateTechMapCommandHandler>();
+            services.AddScoped<IHandler<UpdateTechMapCommand>, UpdateTechMapCommandHandler>();
+            services.AddScoped<IHandler<DeleteTechMapCommand>, DeleteTechMapCommandHandler>();
 
             return services;
         }

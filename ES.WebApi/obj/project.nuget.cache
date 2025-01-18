@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "blaJCfadF09zbWy6igCXAHafaOA7spDaDFe0BB9kpmLPjYPsPL3yWVo6cPNLieqbgyWQfHwG1UV1NlvPe1rVXA==",
+  "dgSpecHash": "dAQxoGFFmByYpZSCN5QWYtisQjcNAehrkSH75scGr7+MRjGu8nDVquxYhchbyxPu1fD8pD1XVAmR+SJ80mRSxg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Kharc\\source\\repos\\jet-the-dragon-backend\\ES.WebApi\\ES.WebApi.csproj",
   "expectedPackageFiles": [
@@ -44,6 +44,7 @@
     "C:\\Users\\Kharc\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Kharc\\.nuget\\packages\\microsoft.openapi\\1.5.0\\microsoft.openapi.1.5.0.nupkg.sha512",
     "C:\\Users\\Kharc\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\Kharc\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
     "C:\\Users\\Kharc\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\Kharc\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\Kharc\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",

@@ -378,6 +378,120 @@ namespace ES.Persistence.Migrations
                     b.ToTable("Supplier", (string)null);
                 });
 
+            modelBuilder.Entity("ES.Domain.TechMap", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("bytea");
+
+                    b.Property<int>("State")
+                        .HasColumnType("integer");
+
+                    b.Property<Guid>("SupplierId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SupplierId");
+
+                    b.ToTable("TechMap", (string)null);
+                });
+
+            modelBuilder.Entity("ES.Domain.TechMapCriticalPath", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("bytea");
+
+                    b.Property<int>("State")
+                        .HasColumnType("integer");
+
+                    b.Property<Guid>("TechMapId")
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("TotalDuration")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TechMapId")
+                        .IsUnique();
+
+                    b.ToTable("TechMapCriticalPath", (string)null);
+                });
+
+            modelBuilder.Entity("ES.Domain.TechMapJobs", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
+                    b.Property<int?>("Index")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTime>("JobCompleteDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("JobDependence")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("JobDescription")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("JobDuration")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("JobName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("JobResources")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("bytea");
+
+                    b.Property<int>("State")
+                        .HasColumnType("integer");
+
+                    b.Property<Guid?>("TechMapCriticalPathId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("TechMapId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid?>("TechMapId1")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TechMapCriticalPathId");
+
+                    b.HasIndex("TechMapId");
+
+                    b.HasIndex("TechMapId1");
+
+                    b.ToTable("TechMapJobs", (string)null);
+                });
+
             modelBuilder.Entity("ES.Domain.Cart", b =>
                 {
                     b.HasOne("ES.Domain.Customer", "Customer")
@@ -516,9 +630,63 @@ namespace ES.Persistence.Migrations
                     b.Navigation("Customer");
                 });
 
+            modelBuilder.Entity("ES.Domain.TechMap", b =>
+                {
+                    b.HasOne("ES.Domain.Supplier", "Supplier")
+                        .WithMany()
+                        .HasForeignKey("SupplierId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Supplier");
+                });
+
+            modelBuilder.Entity("ES.Domain.TechMapCriticalPath", b =>
+                {
+                    b.HasOne("ES.Domain.TechMap", "TechMap")
+                        .WithOne("CriticalPath")
+                        .HasForeignKey("ES.Domain.TechMapCriticalPath", "TechMapId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("TechMap");
+                });
+
+            modelBuilder.Entity("ES.Domain.TechMapJobs", b =>
+                {
+                    b.HasOne("ES.Domain.TechMapCriticalPath", null)
+                        .WithMany("TechMapJobs")
+                        .HasForeignKey("TechMapCriticalPathId");
+
+                    b.HasOne("ES.Domain.TechMap", "TechMap")
+                        .WithMany()
+                        .HasForeignKey("TechMapId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("ES.Domain.TechMap", null)
+                        .WithMany("TechMapJobs")
+                        .HasForeignKey("TechMapId1");
+
+                    b.Navigation("TechMap");
+                });
+
             modelBuilder.Entity("ES.Domain.Product", b =>
                 {
                     b.Navigation("ProductCharaks");
+                });
+
+            modelBuilder.Entity("ES.Domain.TechMap", b =>
+                {
+                    b.Navigation("CriticalPath")
+                        .IsRequired();
+
+                    b.Navigation("TechMapJobs");
+                });
+
+            modelBuilder.Entity("ES.Domain.TechMapCriticalPath", b =>
+                {
+                    b.Navigation("TechMapJobs");
                 });
 #pragma warning restore 612, 618
         }
