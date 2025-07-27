@@ -39,7 +39,6 @@ namespace ES.Application.UseCases.TechMapCases
                 {
                     techMap.TechMapJobs.Add(new TechMapJobs()
                     {
-                        // Id = Guid.NewGuid(),
                         Id = job.Id,
                         JobName = job.JobName,
                         JobDescription = job.JobDescription,
@@ -59,7 +58,6 @@ namespace ES.Application.UseCases.TechMapCases
 
             if (isChanged)
             {
-                //techMap.ComputeCriticalPath();
                 await _techMapRepository.UpdateAsync(techMap);
             }
         }

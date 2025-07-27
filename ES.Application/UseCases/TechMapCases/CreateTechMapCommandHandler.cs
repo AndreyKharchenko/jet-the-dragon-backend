@@ -37,12 +37,6 @@ namespace ES.Application.UseCases.TechMapCases
                 Supplier = supplier,
                 SupplierId = supplier.Id,
                 Name = command.Name
-                /*JobName = command.JobName,
-                JobDescription = command.JobDescription,
-                JobDuration = command.JobDuration,
-                JobDependence = command.JobDependence,
-                JobResources = command.JobResources,
-                JobCompleteDate = command.JobCompleteDate*/
             };
 
             techMap.TechMapJobs = new List<TechMapJobs>();
@@ -51,7 +45,6 @@ namespace ES.Application.UseCases.TechMapCases
             {
                 techMap.TechMapJobs.Add(new TechMapJobs()
                 {
-                    // Id = Guid.NewGuid(),
                     Id = job.Id,
                     JobName = job.JobName,
                     JobDescription = job.JobDescription,
